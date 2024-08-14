@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="mt-6 text-black">${item.description}</p>
                     <div class="price text-3xl mt-4 font-bold text-white">${item.price}</div>
                 </div>
-                <div class="image flex justify-end ml-3 mr-40">
+                <div class="image flex justify-end ml-8 mr-40">
                     <img src="${item.image.src}" alt="${item.image.alt}" class="w-auto h-57 object-cover">
                 </div>
             </div>
