@@ -78,8 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
               icon: "twitter.png",
             },
             {
-              platform: "Instagram",
-              url: "https://www.instagram.com",
+              platform: "Youtube",
+              url: "https://www.youtube.com",
               icon: "youtube.png",
             },
           ],
@@ -124,9 +124,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="flex items-center justify-between p-12 max-w-full -mt-12">
                 <div class="content text-left max-w-xl">
                     <h2 class="text-5xl font-bold text-white">${item.heading}</h2>
-                    <h3 class="text-2xl mt-2 text-white">${item.subheading}<span class="text-black font-bold">${item.span}</span></h3>
+                    <h3 class="text-2xl mt-3 text-white">${item.subheading}<span class="text-black font-bold">${item.span}</span></h3>
                     <p class="mt-6 text-black">${item.description}</p>
-                    <div class="price text-4xl mt-4 font-bold text-white">${item.price}</div>
+                    <div class="price text-4xl mt-5 font-bold text-white">${item.price}</div>
                 </div>
                 <div class="image flex justify-end mt-10 ml-8 mr-40">
                     <img src="${item.image.src}" alt="${item.image.alt}" class="w-auto h-57 object-cover">
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const a = document.createElement("a");
             a.href = iconData.url;
             a.target = "_blank";
-            a.innerHTML = `<img src="${iconData.icon}" alt="${iconData.platform} icon" class="w-8 h-8">`;
+            a.innerHTML = `<img src="${iconData.icon}" alt="${iconData.platform} icon" class="flex items-center justify-centerjustify-center w-10 h-10 rounded-full border border-white-400 p-3">`;
             socialIconsContainer.appendChild(a);
         });
     }
