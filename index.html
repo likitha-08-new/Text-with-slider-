@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text with Slider</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- splide js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" />
+    <style>
+ 
+       .splide__arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            color: white;
+            padding: 15px;
+            font-size: 25px;
+            background-color: transparent;
+            border:2px solid white;
+            color:white;}
+
+        .splide__arrow--prev {
+            left: 600px;
+        }
+
+        .splide__arrow--next {
+            right: 150px; /* Adjust the value to move the next arrow to the right */
+        }
+    </style>
+</head>
+
+<body class="bg-orange-200 text-gray-800 font-sans">
+
+    <header class="flex justify-between items-center p-5 bg-transparent">
+        <div class="header__logo flex items-center ml-20">
+            <img src="logo.png" alt="Company Logo" class="h-8 w-auto">
+        </div>
+        <nav>
+            <ul id="header__menu" class="flex space-x-12 text-black ml-80 text-lg">
+                <!-- Menu items will be injected here -->
+            </ul>
+        </nav>
+        <a href="/signup" class="px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 mr-20">Sign Up</a>
+    </header>
+
+    <div id="dynamic__slider" class="splide mt-2 ml-14">
+        <div class="splide__track">
+            <ul class="splide__list" id="splide-list">
+                <!-- Slides will be injected here -->
+            </ul>
+        </div>
+    </div>
+        <!-- Social Media Icons Container -->
+        <div id="social-icons" class="flex space-x-20 p-7 ml-20 ">
+            <!-- Social media icons will be injected here -->
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
